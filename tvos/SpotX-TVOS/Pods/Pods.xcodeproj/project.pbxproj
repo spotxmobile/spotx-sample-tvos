@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4B902939988D35F4D0951FA53505F5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B617D1FB81FD6F4783AE29E8810A2B5B /* Foundation.framework */; };
+		E9138DB99BAEA2F092F04289D276121B /* Pods-SpotX-TVOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D49C410CE88A8E067632C080321324 /* Pods-SpotX-TVOS-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DBE3904FAE01058D5F09634A3EC7FD4 /* Pods-SpotX-TVOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpotX-TVOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1F671BB00039329FB9B41C33688772BD /* Pods-SpotX-TVOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpotX-TVOS-resources.sh"; sourceTree = "<group>"; };
+		2A23FE469E3B9A6F4BF6980A23F595D7 /* Pods-SpotX-TVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpotX-TVOS.release.xcconfig"; sourceTree = "<group>"; };
+		56D13F0CEB8F4E3779CD64ED800578DF /* libPods-SpotX-TVOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SpotX-TVOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5788E30E08A332B528481C3E3128E840 /* Pods-SpotX-TVOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpotX-TVOS-frameworks.sh"; sourceTree = "<group>"; };
+		66F3BF1C4391144131C094FCCC17BFAF /* SPXAdController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPXAdController.h; path = SpotX.framework/Headers/SPXAdController.h; sourceTree = "<group>"; };
+		8A28E69A7E062CC21564ADBD862DBED3 /* Pods-SpotX-TVOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpotX-TVOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2D49C410CE88A8E067632C080321324 /* Pods-SpotX-TVOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpotX-TVOS-dummy.m"; sourceTree = "<group>"; };
+		A6E8B34B6F04B97B5B78A1600DE236E6 /* Pods-SpotX-TVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpotX-TVOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B617D1FB81FD6F4783AE29E8810A2B5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BBD5598BB927833B4CBD519425C8D92D /* SpotX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotX.framework; sourceTree = "<group>"; };
+		F9E5A6A34F7455BFB03A46723D3F9971 /* SpotX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpotX.h; path = SpotX.framework/Headers/SpotX.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B97A49162876332B671EA4B5848D877 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4B902939988D35F4D0951FA53505F5B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0280461F41D8BD00B93D9ADFFA3EFE3E /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				B617D1FB81FD6F4783AE29E8810A2B5B /* Foundation.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		2776CC8045DEC6408B92ACE71ED7479A /* Pods-SpotX-TVOS */ = {
+			isa = PBXGroup;
+			children = (
+				1DBE3904FAE01058D5F09634A3EC7FD4 /* Pods-SpotX-TVOS-acknowledgements.markdown */,
+				8A28E69A7E062CC21564ADBD862DBED3 /* Pods-SpotX-TVOS-acknowledgements.plist */,
+				A2D49C410CE88A8E067632C080321324 /* Pods-SpotX-TVOS-dummy.m */,
+				5788E30E08A332B528481C3E3128E840 /* Pods-SpotX-TVOS-frameworks.sh */,
+				1F671BB00039329FB9B41C33688772BD /* Pods-SpotX-TVOS-resources.sh */,
+				A6E8B34B6F04B97B5B78A1600DE236E6 /* Pods-SpotX-TVOS.debug.xcconfig */,
+				2A23FE469E3B9A6F4BF6980A23F595D7 /* Pods-SpotX-TVOS.release.xcconfig */,
+			);
+			name = "Pods-SpotX-TVOS";
+			path = "Target Support Files/Pods-SpotX-TVOS";
+			sourceTree = "<group>";
+		};
+		3AAA5C48A93D0C6C15FC5AB9DD9A52B3 /* SpotX-SDK-AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F9E5A6A34F7455BFB03A46723D3F9971 /* SpotX.h */,
+				66F3BF1C4391144131C094FCCC17BFAF /* SPXAdController.h */,
+				5E908218DE80ADDDF1F89B80D15D4884 /* Frameworks */,
+			);
+			path = "SpotX-SDK-AVPlayer";
+			sourceTree = "<group>";
+		};
+		5E908218DE80ADDDF1F89B80D15D4884 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBD5598BB927833B4CBD519425C8D92D /* SpotX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		645D21D6B5937A19923E0C7B0AC5A4EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56D13F0CEB8F4E3779CD64ED800578DF /* libPods-SpotX-TVOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70A306D563F232B0BE5A646E10B9594E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2776CC8045DEC6408B92ACE71ED7479A /* Pods-SpotX-TVOS */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BB99B8D4C7329D10E7E4451B0A72C15A /* Frameworks */,
+				8602434708356D08E0B4A896B5C58FFC /* Pods */,
+				645D21D6B5937A19923E0C7B0AC5A4EE /* Products */,
+				70A306D563F232B0BE5A646E10B9594E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8602434708356D08E0B4A896B5C58FFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AAA5C48A93D0C6C15FC5AB9DD9A52B3 /* SpotX-SDK-AVPlayer */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB99B8D4C7329D10E7E4451B0A72C15A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0280461F41D8BD00B93D9ADFFA3EFE3E /* tvOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		781D537BFE8D1A07253C44B5815D3F76 /* Pods-SpotX-TVOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACEA8253FCB45CC6D599BD1960E9E122 /* Build configuration list for PBXNativeTarget "Pods-SpotX-TVOS" */;
+			buildPhases = (
+				EE6AEDD80AB5B5C4AE2DC14C4B091E0F /* Sources */,
+				0B97A49162876332B671EA4B5848D877 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SpotX-TVOS";
+			productName = "Pods-SpotX-TVOS";
+			productReference = 56D13F0CEB8F4E3779CD64ED800578DF /* libPods-SpotX-TVOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 645D21D6B5937A19923E0C7B0AC5A4EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				781D537BFE8D1A07253C44B5815D3F76 /* Pods-SpotX-TVOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE6AEDD80AB5B5C4AE2DC14C4B091E0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9138DB99BAEA2F092F04289D276121B /* Pods-SpotX-TVOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0E8860D63F60EED6B887B1132B480780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BACB4DAF44A35E7696C78A63F869186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A23FE469E3B9A6F4BF6980A23F595D7 /* Pods-SpotX-TVOS.release.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		607041E70664D80837DB05AC692EDB84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6E8B34B6F04B97B5B78A1600DE236E6 /* Pods-SpotX-TVOS.debug.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		6AEF8852969FA36CF119CDE50C811391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AEF8852969FA36CF119CDE50C811391 /* Debug */,
+				0E8860D63F60EED6B887B1132B480780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACEA8253FCB45CC6D599BD1960E9E122 /* Build configuration list for PBXNativeTarget "Pods-SpotX-TVOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607041E70664D80837DB05AC692EDB84 /* Debug */,
+				1BACB4DAF44A35E7696C78A63F869186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

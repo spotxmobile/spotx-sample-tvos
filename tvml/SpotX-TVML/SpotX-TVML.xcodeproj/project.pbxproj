@@ -1,0 +1,289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		445A6CAA1DA87CE70091A76F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A6CA91DA87CE70091A76F /* main.m */; };
+		445A6CAD1DA87CE70091A76F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A6CAC1DA87CE70091A76F /* AppDelegate.m */; };
+		445A6CB01DA87CE70091A76F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 445A6CAF1DA87CE70091A76F /* Assets.xcassets */; };
+		445A6CBB1DA8825A0091A76F /* tvml in Resources */ = {isa = PBXBuildFile; fileRef = 445A6CBA1DA8825A0091A76F /* tvml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		445A6CA51DA87CE70091A76F /* SpotX-TVML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpotX-TVML.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		445A6CA91DA87CE70091A76F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		445A6CAB1DA87CE70091A76F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		445A6CAC1DA87CE70091A76F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		445A6CAF1DA87CE70091A76F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		445A6CB11DA87CE70091A76F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		445A6CBA1DA8825A0091A76F /* tvml */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tvml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		445A6CA21DA87CE70091A76F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		445A6C9C1DA87CE70091A76F = {
+			isa = PBXGroup;
+			children = (
+				445A6CA71DA87CE70091A76F /* SpotX-TVML */,
+				445A6CA61DA87CE70091A76F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		445A6CA61DA87CE70091A76F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				445A6CA51DA87CE70091A76F /* SpotX-TVML.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		445A6CA71DA87CE70091A76F /* SpotX-TVML */ = {
+			isa = PBXGroup;
+			children = (
+				445A6CAB1DA87CE70091A76F /* AppDelegate.h */,
+				445A6CAC1DA87CE70091A76F /* AppDelegate.m */,
+				445A6CAF1DA87CE70091A76F /* Assets.xcassets */,
+				445A6CBA1DA8825A0091A76F /* tvml */,
+				445A6CB11DA87CE70091A76F /* Info.plist */,
+				445A6CA81DA87CE70091A76F /* Supporting Files */,
+			);
+			path = "SpotX-TVML";
+			sourceTree = "<group>";
+		};
+		445A6CA81DA87CE70091A76F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				445A6CA91DA87CE70091A76F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		445A6CA41DA87CE70091A76F /* SpotX-TVML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 445A6CB41DA87CE70091A76F /* Build configuration list for PBXNativeTarget "SpotX-TVML" */;
+			buildPhases = (
+				445A6CA11DA87CE70091A76F /* Sources */,
+				445A6CA21DA87CE70091A76F /* Frameworks */,
+				445A6CA31DA87CE70091A76F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpotX-TVML";
+			productName = "SpotX-TVML";
+			productReference = 445A6CA51DA87CE70091A76F /* SpotX-TVML.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		445A6C9D1DA87CE70091A76F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = SpotX;
+				TargetAttributes = {
+					445A6CA41DA87CE70091A76F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = M4T49QG5CY;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 445A6CA01DA87CE70091A76F /* Build configuration list for PBXProject "SpotX-TVML" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 445A6C9C1DA87CE70091A76F;
+			productRefGroup = 445A6CA61DA87CE70091A76F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				445A6CA41DA87CE70091A76F /* SpotX-TVML */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		445A6CA31DA87CE70091A76F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445A6CB01DA87CE70091A76F /* Assets.xcassets in Resources */,
+				445A6CBB1DA8825A0091A76F /* tvml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		445A6CA11DA87CE70091A76F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445A6CAD1DA87CE70091A76F /* AppDelegate.m in Sources */,
+				445A6CAA1DA87CE70091A76F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		445A6CB21DA87CE70091A76F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		445A6CB31DA87CE70091A76F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		445A6CB51DA87CE70091A76F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = M4T49QG5CY;
+				INFOPLIST_FILE = "SpotX-TVML/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spotxchange.SpotX-TVML";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		445A6CB61DA87CE70091A76F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = M4T49QG5CY;
+				INFOPLIST_FILE = "SpotX-TVML/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spotxchange.SpotX-TVML";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		445A6CA01DA87CE70091A76F /* Build configuration list for PBXProject "SpotX-TVML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445A6CB21DA87CE70091A76F /* Debug */,
+				445A6CB31DA87CE70091A76F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		445A6CB41DA87CE70091A76F /* Build configuration list for PBXNativeTarget "SpotX-TVML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445A6CB51DA87CE70091A76F /* Debug */,
+				445A6CB61DA87CE70091A76F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 445A6C9D1DA87CE70091A76F /* Project object */;
+}
