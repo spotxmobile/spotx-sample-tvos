@@ -27,7 +27,9 @@
 #pragma mark UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  NSURL *tvBootURL = [[NSBundle mainBundle] URLForResource:@"application" withExtension:@"js" subdirectory:@"tvml"];
+  NSString * applicationName = @"application";
+  // /* uncomment to present the super simple app */ applicationName = @"application_simple";
+  NSURL *tvBootURL = [[NSBundle mainBundle] URLForResource:applicationName withExtension:@"js" subdirectory:@"tvml"];
   NSString *tvBaseURL =  [[tvBootURL URLByDeletingLastPathComponent] absoluteString];
 
   // Override point for customization after application launch.
