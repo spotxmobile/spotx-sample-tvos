@@ -17,7 +17,7 @@ var createPlayerTemplate = function (BASEURL) {
       <listTemplate>
         <banner>
           <row>
-            <text style="font-size: 72px;">SpotX TVOS Code Sample</text>
+            <text style="font-size: 72px;">SpotX TVML Code Sample</text>
           </row>
         </banner>    
         <list>
