@@ -73,6 +73,12 @@
       NSLog(@"SpotX Ad Request Error: %@", error);
     }
     else if (ad) {
+
+      // !!NOTE: You *MUST* retain a reference to the SPXAdController instance,
+      // otherwise it will be immediately deallocated and the delegate events
+      // will not fire.
+      _controller = ad;
+
       // set the delegate on the controller to listen to ad events
       ad.delegate = self;
 
@@ -129,6 +135,7 @@
   if (_playerController) {
     _playerController.requiresLinearPlayback = NO;
   }
+  _controller = nil;
 }
 
 - (void)adController:(SPXAdController *)adController adDidFailWithError:(NSError *)error {
@@ -136,6 +143,7 @@
   if (_playerController) {
     _playerController.requiresLinearPlayback = NO;
   }
+  _controller = nil;
 }
 
 /*
