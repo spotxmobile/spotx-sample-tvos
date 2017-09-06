@@ -83,9 +83,15 @@
 
   // play the Ad immediately
   ad.delegate = self;
+  // Disable scrubbing during ad playback
+  self.showsPlaybackControls = NO;
+  self.requiresLinearPlayback = YES;
   [ad play:self.player completion:^{
     // Ad playback complete, reset the player position back to where we left off before the Ad
     [self.player seekToTime:content.currentTime completionHandler:^(BOOL finished) {
+      // Enable scrubbing after ad playback complete
+      self.showsPlaybackControls = YES;
+      self.requiresLinearPlayback = NO;
       // restart the player
       [self.player play];
     }];

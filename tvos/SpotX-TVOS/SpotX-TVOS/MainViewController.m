@@ -130,6 +130,12 @@
   }
 }
 
+- (void)adControllerPlayNextAd:(SPXAdController *)adController {
+  if (_playerController) {
+    _playerController.requiresLinearPlayback = YES;
+  }
+}
+
 - (void)adControllerAdDidFinish:(SPXAdController *)adController {
   // Ad has completed playback - allow scrubbing
   if (_playerController) {
