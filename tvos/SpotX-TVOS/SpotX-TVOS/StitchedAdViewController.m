@@ -96,6 +96,13 @@
       [self.player play];
     }];
   }];
+  
+  // !!NOTE: This observer provides a mechanism to dismiss the AVPlayer when all videos are complete
+  // This is not required for the SDK, and is included for demo purposes.
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(playerItemDidReachEnd:)
+                                               name:AVPlayerItemDidPlayToEndTimeNotification
+                                             object:content];
 
   [self.view setNeedsLayout];
   [self.view setNeedsDisplay];
@@ -138,6 +145,10 @@
     // dismiss the current view controller
     [self dismissViewControllerAnimated:YES completion:nil];
   }
+}
+
+- (void)playerItemDidReachEnd:(NSNotification *)notification {
+  [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

@@ -96,13 +96,20 @@
           [ad preRoll:player];
           break;
       }
-
-      // present the player view controller
-      [self presentViewController:_playerController animated:YES completion:^{
-        // player view controller has been presented, play it
-        [_playerController.player play];
-      }];
     }
+    // present the player view controller
+    // !!NOTE: even if there are no ads, we still want to play the publisher's videos
+    [self presentViewController:_playerController animated:YES completion:^{
+      // player view controller has been presented, play it
+      [_playerController.player play];
+    }];
+    
+    // !!NOTE: This observer provides a mechanism to dismiss the AVPlayer when all videos are complete
+    // This is not required for the SDK, and is included for demo purposes.
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(playerItemDidReachEnd:)
+                                                 name:AVPlayerItemDidPlayToEndTimeNotification
+                                               object:[player.items lastObject]];
   }];
 }
 
@@ -172,5 +179,9 @@
     // dismiss the current view controller
     [_playerController dismissViewControllerAnimated:YES completion:nil];
   }
+}
+
+- (void)playerItemDidReachEnd:(NSNotification *)notification {
+  [_playerController dismissViewControllerAnimated:YES completion:nil];
 }
 @end
