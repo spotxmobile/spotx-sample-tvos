@@ -62,7 +62,11 @@
 
   NSString * channelId = self.channelIdTextField.text;
 
-  // specify any parameters you might want to pass on in the request to SpotX
+  /**
+   *  specify any parameters you might want to pass on in the request to SpotX
+   *  i.e. for podding:
+   *  SpotXParams * spotxParams = @{@"pod[size]":@"3", @"pod[max_pod_dur]":@"900", @"pod[max_ad_dur]":@"300"};
+   */
   SpotXParams * spotxParams = @{};
 
   // request the ad from SpotX using the channel id
