@@ -1,6 +1,0 @@
-framework module SpotX {
-  umbrella header "SpotX.h"
-
-  export *
-  module * { export * }
-}

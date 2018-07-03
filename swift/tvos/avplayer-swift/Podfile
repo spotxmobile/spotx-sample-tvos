@@ -1,0 +1,4 @@
+use_frameworks!
+
+target 'avplayer-swift'
+pod 'SpotX-SDK-AVPlayer'

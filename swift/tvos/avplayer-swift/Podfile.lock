@@ -1,0 +1,16 @@
+PODS:
+  - SpotX-SDK-AVPlayer (1.5.2)
+
+DEPENDENCIES:
+  - SpotX-SDK-AVPlayer
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SpotX-SDK-AVPlayer
+
+SPEC CHECKSUMS:
+  SpotX-SDK-AVPlayer: c909fbc3ee4a0cb3585e2205bf47ef4405c915f5
+
+PODFILE CHECKSUM: 01fc7064c0b98e61cc8252f407f737141545afc9
+
+COCOAPODS: 1.5.0
