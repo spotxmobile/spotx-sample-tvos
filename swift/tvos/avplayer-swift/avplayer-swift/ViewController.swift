@@ -16,9 +16,9 @@ class ViewController: UIViewController, SPXAdControllerDelegate {
       player = AVQueuePlayer(items: anItems)
     }
     playerController?.player = player
-    let channelId = "85394"
+    let channelId = channelIdTextField.text
     let spotxParams = [String:String]()
-    SpotX.ad(forChannel: channelId, params: spotxParams) { ad, error in
+    SpotX.ad(forChannel: channelId!, params: spotxParams) { ad, error in
       if error != nil {
         if let anError = error {
           print("error: \(anError)")

@@ -30,9 +30,16 @@ class StitchedAdViewController: AVPlayerViewController, SPXAdControllerDelegate 
     }
   }
   
+  /**
+   * NOTE: This method uses adCount to play a preroll, a midroll, and a postroll advertisement.
+   * In a typical integration, you would likely only use one of the three.
+   * This method works in conjunction with the playerItemDidReachEnd method,
+   * which continues playback after preroll and midroll, and after the postroll ad completes,
+   * dismisses the adview.
+   */
   func loadAndPlayAd() {
     let spotxParams = [String:String]()
-    let channelId = "85394"
+    let channelId = self.channelId
     SpotX.ad(forChannel: channelId, params: spotxParams) { ad, error in
       if error != nil {
         if let anError = error {
@@ -53,8 +60,10 @@ class StitchedAdViewController: AVPlayerViewController, SPXAdControllerDelegate 
     }
   }
   
+  // This method is used to play a standalone placement (preroll, or postroll).
   @objc func playAdStandalone(_ ad: SPXAdController?) {
     ad?.delegate = self
+    // During ad playback, we want to disable playback controls
     showsPlaybackControls = false
     requiresLinearPlayback = true
     player = ad?.standalone()
@@ -65,7 +74,9 @@ class StitchedAdViewController: AVPlayerViewController, SPXAdControllerDelegate 
     view.setNeedsDisplay()
   }
   
+  // This method is used to play a midroll placement.
   func loadAndPlayContentWithMidroll() {
+    // Sample video - placeholder for publisiher video content
     let videoUrl = URL(string: "https://spotxchange-a.akamaihd.net/media/videos/orig/e/f/ef70d1ba92f811e5ba6c106b23389c4d.mp4")
     player = nil
     if let anUrl = videoUrl {
@@ -80,14 +91,17 @@ class StitchedAdViewController: AVPlayerViewController, SPXAdControllerDelegate 
     player?.play()
   }
   
+  // This function plays an ad if one is returned.
   @objc func playAd(_ ad: SPXAdController?) {
     let content: AVPlayerItem? = player?.currentItem
     ad?.delegate = self
+    // During ad playback, we want to disable playback controls
     showsPlaybackControls = false
     requiresLinearPlayback = true
     ad?.play(player) {
       if let aTime = content?.currentTime() {
         self.player?.seek(to: aTime, completionHandler: { finished in
+          // When the ad completes, re-enable playback controls
           self.showsPlaybackControls = true
           self.requiresLinearPlayback = false
           self.player?.play()
@@ -103,15 +117,15 @@ class StitchedAdViewController: AVPlayerViewController, SPXAdControllerDelegate 
   // MARK: SPXAdControllerDelegate methods
   
   func presentAdViewController(_ viewControllerToPresent: UIViewController!) {
-    // TODO
+    //
   }
   
   func adControllerPlayNextAd(_ adController: SPXAdController!) {
-    // TODO
+    //
   }
   
   func adController(_ adController: SPXAdController!, adDidFailWithError error: Error!) {
-    // TODO
+    //
   }
   
   func adControllerAdDidStart(_ adController: SPXAdController?) {
@@ -126,6 +140,12 @@ class StitchedAdViewController: AVPlayerViewController, SPXAdControllerDelegate 
     requiresLinearPlayback = false
   }
   
+  /**
+   * This function is typically only used to dismiss the ad view.
+   * However, since this demo app shows preroll, midroll, and postroll placements,
+   * this method has been modified to continue playback of content/ads until the postroll ad
+   * has been played. Once the postroll is played, the view is finally dismissed.
+   */
   @objc func playerItemDidReachEnd(_ notification: Notification?) {
     adCount += 1
     switch adCount {
