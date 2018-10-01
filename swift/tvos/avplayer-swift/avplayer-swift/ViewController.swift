@@ -17,7 +17,7 @@ class ViewController: UIViewController, SPXAdControllerDelegate {
     }
     playerController?.player = player
     let channelId = channelIdTextField.text
-    let spotxParams = [String:String]()
+    let spotxParams = ["pod[size]": "5", "pod[max_pod_dur]": "1800", "pod[max_ad_dur]": "60"]
     SpotX.ad(forChannel: channelId!, params: spotxParams) { ad, error in
       if error != nil {
         if let anError = error {

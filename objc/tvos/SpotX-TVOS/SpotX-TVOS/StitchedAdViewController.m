@@ -52,7 +52,7 @@
    *  i.e. for podding:
    *  SpotXParams * spotxParams = @{@"pod[size]":@"3", @"pod[max_pod_dur]":@"900", @"pod[max_ad_dur]":@"300"};
    */
-  SpotXParams * spotxParams = @{};
+  SpotXParams * spotxParams = @{@"pod[size]":@"5", @"pod[max_pod_dur]":@"1800", @"pod[max_ad_dur]":@"60"};
   
   // request the ad from SpotX using the channel id
   [SpotX adForChannel:self.channelId params:spotxParams completion:^(SPXAdController * ad, NSError * error) {
