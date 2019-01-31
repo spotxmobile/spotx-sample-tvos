@@ -141,6 +141,10 @@ function spotxPlayAd(channelId, player, playerParams, eventCallback) {
                     player = adPlayer.standalone();
                 }
 
+                // ignore user scrubbing requests
+                player.addEventListener("requestSeekToTime", (event) => {return false;});
+                player.addEventListener("shouldHandleStateChange", (event) => {return false;});
+                
                 // play the video(s)
                 player.play();
             });
