@@ -1,6 +1,6 @@
 
 target 'SpotX-TVOS' do
   
-  pod 'SpotX-SDK-AVPlayer', '~> 1.5.2'
+  pod 'SpotX-SDK-AVPlayer'
 
 end
